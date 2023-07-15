@@ -1,0 +1,142 @@
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    position: relative;
+}
+
+nav{
+    background-color: rgb(255, 255, 255);
+    color: rgb(241, 35, 35) !important;
+    box-shadow: 0px 2px 7px rgba(231, 102, 102, 0.445);
+}
+
+.bg-hero{
+    background-image: linear-gradient(rgba(49, 47, 47, 0.7),rgba(34, 33, 33, 0.7)),url("/media/burger.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 100vh;
+    width: auto;
+    color: #f7f7f7;
+}
+.center{
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position:absolute;
+}
+
+h1{
+    font-weight: 25px;
+}
+
+#item{
+    height: fit-content;
+    background-color: #e9e5e5;
+    color: black;
+}
+
+#offer{
+    height: fit-content;
+    background-color: #fcfcfc;
+    color: black;
+    position: relative;
+}
+
+#combo{
+    height: fit-content;
+    background-color: #e9e5e5;
+    color: black;
+}
+
+#contact{
+    height: fit-content;
+    background-color: #fcfcfc;
+    color: black
+}
+
+.nav-pills.nav-item.active{
+    background-color: rgba(248, 33, 33, 0.904) !important;
+    color: #f7f7f7 !important;
+}
+
+footer{
+    background-color: rgb(255, 255, 255);
+    color: rgb(241, 35, 35);
+    box-shadow: 0px 2px 7px rgba(231, 102, 102, 0.445);
+    width: 100%;
+    height: fit-content;
+}
+
+.owl-carousel{
+    opacity: 0;
+    transition: all 2s ease-in;
+}
+
+.items{
+    opacity: 0;
+    transition: all 2s ease-in;
+}
+
+.fade-in{
+    opacity: 1;
+}
+
+.flipcard{
+    background: transparent;
+    height: 400px;
+    width: 300px;
+    margin: 1px;
+    border: 1px ,solid black;
+    border-radius: 10px;
+    perspective: 1000px;
+}
+
+.flipcard-inner{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transition: transform 1.3s;
+    transform-style: preserve-3d;
+}
+
+.flipcard:hover .flipcard-inner{
+    transform: rotateY(180deg);
+}
+
+.card-front,.card-back{
+    position: absolute;
+    backface-visibility: hidden;
+    height: 100%;
+    width: 100%;
+    border: 1px ,solid black;
+    border-radius: 10px;
+}
+
+.img-fluid{
+    border-radius: 10px;
+}
+
+.card-front{
+    background-color: rgb(20, 23, 26);
+    color: white;
+}
+
+.card-back{
+    text-align: left;
+    background-color: rgb(43, 40, 40);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.card-back ul li{
+    list-style: none;
+}
+
+.form-control:hover{
+    border: 3px solid rgb(241, 35, 35) !important;
+}

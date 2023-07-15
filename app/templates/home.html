@@ -1,0 +1,261 @@
+{% extends "master.html" %}
+{% block content %}
+
+<section class="container-fluid bg-hero py-5" style="height: 720px;" id="home">
+    <div class="row center  my-5 py-5">
+        <div class="col-md-6  text-center mt-5 pt-5">
+          <img src="/media/bb.png" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-6 my-5">
+            <h1 style="font-size: xx-large;"><strong> Hello!,Welcome to our shop</strong></h1>
+            <h5 class="px-3 pt-3" style="font-weight: bold;">Hungry? Try Our Burgers Made with Half Pound Patties</h5>
+            <h5 class="px-3 pb-3" style="font-weight: bold;">One Hand Is Not Enough !</h5>
+        </div>
+    </div>
+</section>
+<section class="container-fluid p-5 text-center" id="item">
+    <h1 class="mt-5 py-3 text-danger"><strong><i class="fa-solid fa-utensils"></i> items</strong></h1>
+    <div class="owl-carousel owl-theme my-5" id="sm">
+          <div class="card h-100 ">
+            <img src="/media/b-bg.jpg" class="card-img-top" alt="...">
+            <div class="card-body clearfix">
+              <h5 class="card-title float-start"><span class="badge bg-primary"><i class="fa-regular fa-burger fa-beat"></i> Burger</span></h5>
+              <p class="card-text float-start text-start"><strong>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</strong></p>
+            </div>
+          </div>
+          <div class="card h-100">
+            <img src="/media/pizza.jpg" class="card-img-top" alt="...">
+            <div class="card-body clearfix">
+              <h5 class="card-title float-start"><span class="badge bg-primary"><i class="fa-solid fa-pizza-slice fa-beat"></i> Pizza</span></h5>
+              <p class="card-text float-start text-start"><strong>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</strong></p>
+            </div>
+          </div>
+          <div class="card h-100">
+            <img src="/media/sandwich.jpg" class="card-img-top" alt="...">
+            <div class="card-body clearfix">
+              <h5 class="card-title float-start"><span class="badge bg-primary"><i class="fa-solid fa-hotdog fa-beat"></i> Sandwich</span></h5>
+              <p class="card-text float-start text-start"><strong>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</strong></p>
+            </div>
+          </div>
+            <div class="card h-100">
+              <img src="/media/fries.jpg" class="card-img-top" alt="...">
+              <div class="card-body clearfix">
+                <h5 class="card-title float-start"><span class="badge bg-primary"><i class="fa-solid fa-lines-leaning fa-beat"></i> Fries</span></h5>
+                <p class="card-text float-start text-start"><strong>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</strong></p>
+              </div>
+            </div>
+          <div class="card h-100">
+            <img src="/media/drinks.jpg" class="card-img-top" alt="...">
+            <div class="card-body clearfix">
+              <h5 class="card-title float-start"><span class="badge bg-primary"><i class="fa-regular fa-martini-glass-citrus fa-beat"></i> drinks</span></h5>
+              <p class="card-text float-start text-start"><strong>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</strong></p>
+            </div>
+          </div>
+          <div class="card h-100">
+            <img src="/media/dessert.jpg" class="card-img-top" alt="...">
+            <div class="card-body clearfix">
+              <h5 class="card-title float-start"><span class="badge bg-primary"><i class="fa-solid fa-ice-cream fa-beat"></i> dessert</span></h5>
+              <p class="card-text float-start text-start"><strong>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</strong></p>
+            </div>
+          </div>
+    </div>      
+</section>
+<section class="container-fluid p-5 text-center" id="offer">
+  <h1 class="mt-5 py-3 text-danger"><strong><i class="fa-solid fa-tags"></i> Offers</strong></h1>
+  <div class="menu my-3">
+    <ul class="nav nav-underline justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active" data-filter="*" href="#" style="color: rgb(214, 37, 37);"><strong>All</strong></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " data-filter=".special" href="#" style="color: rgb(214, 37, 37);"><strong>Special</strong></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-filter=".weekend" href="#" style="color: rgb(214, 37, 37);"><strong>Weekend</strong></a>
+      </li>
+    </ul>
+  </div>
+  <div class="row">
+    <div class="items" id="o">
+      <div class=" item special card col-lg-3 col-md-5 col-sm-5 m-3"> 
+        <img src="/media/b-bg.jpg" class="card-img-top" alt="...">
+      </div>
+      <div class=" item special card col-md-5 col-lg-3 col-sm-5 m-3"> 
+        <img src="/media/b-bg.jpg" class="card-img-top" alt="...">
+      </div>
+      <div class=" item special card col-md-5 col-sm-5 col-lg-3 m-3"> 
+        <img src="/media/b-bg.jpg" class="card-img-top" alt="...">
+      </div>
+      <div class=" item special card col-md-5 col-lg-3 col-sm-5 m-3"> 
+        <img src="/media/b-bg.jpg" class="card-img-top" alt="...">
+      </div>
+      <div class=" item special card col-md-5 col-sm-5 col-lg-3 m-3"> 
+        <img src="/media/b-bg.jpg" class="card-img-top" alt="...">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container-fluid p-5 text-center" id="combo">
+  <h1 class="mt-5 py-3 text-danger"><strong><i class="fa-solid fa-cookie-bite"></i> Combo's</strong></h1>
+    <div class="row">
+      <div class="flipcard my-3 me-1 col-lg-3 col-md-4 col-sm-6">
+        <div class="flipcard-inner">
+            <div class="card-front">
+                <img src="/media/combo/combo3.jpg" alt="..." class="img-fluid">
+            </div>
+            <div class="card-back py-5 px-2">
+                <ul>
+                    <li><p><strong> burger</strong></p></li>
+                    <li><p><strong> fries</strong></p></li>
+                    <li><p><strong> pizza</strong></p> </li>
+                </ul>
+                <p class="px-4"><strong>price : ---</strong></p>
+            </div>
+        </div>
+      </div>
+      <div class="flipcard me-1 my-3 col-lg-3 col-md-4 col-sm-6">
+        <div class="flipcard-inner">
+            <div class="card-front">
+                <img src="/media/combo/combo3.jpg" alt="..." class="img-fluid">
+            </div>
+            <div class="card-back py-5 px-2">
+                <ul>
+                    <li><p><strong> burger</strong></p></li>
+                    <li><p><strong> fries</strong></p></li>
+                    <li><p><strong> pizza</strong></p> </li>
+                </ul>
+                <p class="px-4"><strong>price : ---</strong></p>
+            </div>
+        </div>
+      </div>
+      <div class="flipcard me-1 my-3 col-lg-3 col-md-4 col-sm-6">
+        <div class="flipcard-inner">
+            <div class="card-front">
+                <img src="/media/combo/combo3.jpg" alt="..." class="img-fluid">
+            </div>
+            <div class="card-back py-5 px-2">
+                <ul>
+                    <li><p><strong> burger</strong></p></li>
+                    <li><p><strong> fries</strong></p></li>
+                    <li><p><strong> pizza</strong></p> </li>
+                </ul>
+                <p class="px-4"><strong>price : ---</strong></p>
+            </div>
+          </div>
+      </div>
+      <div class="flipcard me-1 my-3 col-lg-3 col-md-4 col-sm-6">
+        <div class="flipcard-inner">
+            <div class="card-front">
+                <img src="/media/combo/combo3.jpg" alt="..." class="img-fluid">
+            </div>
+            <div class="card-back py-5 px-1">
+                <ul>
+                    <li><p><strong> burger</strong></p></li>
+                    <li><p><strong> fries</strong></p></li>
+                    <li><p><strong> pizza</strong></p> </li>
+                </ul>
+                <p class="px-4"><strong>price : ---</strong></p>
+            </div>
+        </div>
+      </div>
+    </div>
+</section>
+<section class="container-fluid p-5 text-center" id="contact">
+  <h1 class="mt-5 py-3 text-danger"><strong><i class="fa-regular fa-address-card"sss></i> Contact</strong></h1>
+  <div class="container my-3 p-5">
+    <div class="row justify-content-center">
+        <form action="#" class="col-md-6">
+            <div class="form-floating mb-3 text-danger">
+                <input type="text" class="form-control border border-danger-subtle d-inline-flex focus-ring focus-ring-danger text-decoration-none border rounded-2" id="floatingInputGroup1" placeholder="Name">
+                <label for="floatingInputGroup1"> Name</label>
+            </div>
+
+            <div class="form-floating mb-3  text-danger">
+                <input type="email" class="form-control border border-danger-subtle d-inline-flex focus-ring focus-ring-danger text-decoration-none border rounded-2" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput"> Your Mail Id</label>
+            </div>
+            
+            <div class="form-floating mb-3  text-danger">
+                <textarea class="form-control border border-danger-subtle d-inline-flex focus-ring focus-ring-danger text-decoration-none border rounded-2" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Comments</label>
+            </div>
+            <button type="button" class="btn btn-danger float-end"> Submit</button>
+        </form>
+    </div>
+</div>
+</section>
+<script>
+
+$(function(){
+  //carousel
+  $('.owl-carousel').owlCarousel({
+        margin: 30,
+        loop:true,
+        autoplay:true,
+        smartSpeed:300,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            767:{
+                items:2
+            },
+            1000:{
+                items:3
+            }
+        }
+  });
+
+  //nav scroll
+  $('body').scrollspy({ target: '#navbar' });
+
+  //isotope
+  $('.items').isotope({
+    itemSelector: '.item',
+    layoutMode: 'fitRows'
+  });  
+
+  $('.menu ul li a').click(function(){
+    $('.menu ul li a').removeClass('active');
+    $(this).addClass('active');
+    
+    var selector = $(this).attr('data-filter');
+      $('.items').isotope({
+          filter:selector
+      });
+    return false;
+  });
+
+});
+
+$(document).ready(function(){
+
+  var controller = new ScrollMagic.Controller();
+
+  var pinhome = new ScrollMagic.Scene({
+    triggerElement: '#home',
+    triggerHook: 0,
+    duration: '40%'
+  })
+  .setPin('#home')
+  .addTo(controller);
+
+  var ourScene = new ScrollMagic.Scene({
+    triggerElement: '#sm',
+    triggerHook: 0.8
+  })
+  .setClassToggle('#sm','fade-in')
+  .addTo(controller);
+
+  var ourScene2 = new ScrollMagic.Scene({
+    triggerElement: '#o',
+    triggerHook: 0.8
+  })
+  .setClassToggle('#o','fade-in')
+  .addTo(controller);
+});
+   
+</script>
+
+{% endblock %}
