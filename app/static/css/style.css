@@ -34,26 +34,26 @@ h1{
     font-weight: 25px;
 }
 
+#about{
+    height: fit-content;
+    width: 100%;
+    color:black;
+    background-color: #fcfcfc;
+}
+
 #item{
     height: fit-content;
     background-color: #e9e5e5;
     color: black;
 }
 
-#offer{
-    height: fit-content;
-    background-color: #fcfcfc;
-    color: black;
-    position: relative;
-}
-
-#combo{
+#contact{
     height: fit-content;
     background-color: #e9e5e5;
     color: black;
 }
 
-#contact{
+#combo{
     height: fit-content;
     background-color: #fcfcfc;
     color: black
@@ -73,11 +73,6 @@ footer{
 }
 
 .owl-carousel{
-    opacity: 0;
-    transition: all 2s ease-in;
-}
-
-.items{
     opacity: 0;
     transition: all 2s ease-in;
 }
