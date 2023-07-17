@@ -3,8 +3,8 @@
 
 <section class="container-fluid bg-hero py-5" style="height: 720px;" id="home">
     <div class="row center  my-5 py-5">
-        <div class="col-md-6  text-center mt-5 pt-5">
-          <img src="/media/bb.png" alt="" class="img-fluid">
+        <div class="col-md-6 text-center mt-5">
+          <img src="/media/burgerf.png" alt="" class="img-fluid">
         </div>
         <div class="col-md-6 my-5">
             <h1 style="font-size: xx-large;"><strong> Hello!,Welcome to our shop</strong></h1>
@@ -75,21 +75,21 @@
       </li>
     </ul>
   </div>
-  <div class="row">
-    <div class="items" id="o">
-      <div class=" item special card col-lg-3 col-md-5 col-sm-5 m-3"> 
+  <div class="row text-center">
+    <div class="items text-center" id="o">
+      <div class=" item special card col-lg-3 col-md-4 col-sm-6 m-3"> 
         <img src="/media/b-bg.jpg" class="card-img-top" alt="...">
       </div>
-      <div class=" item special card col-md-5 col-lg-3 col-sm-5 m-3"> 
+      <div class=" item weekend card col-md-4 col-lg-3 col-sm-6 m-3"> 
         <img src="/media/b-bg.jpg" class="card-img-top" alt="...">
       </div>
-      <div class=" item special card col-md-5 col-sm-5 col-lg-3 m-3"> 
+      <div class=" item weekend card col-md-4 col-sm-6 col-lg-3 m-3"> 
         <img src="/media/b-bg.jpg" class="card-img-top" alt="...">
       </div>
-      <div class=" item special card col-md-5 col-lg-3 col-sm-5 m-3"> 
+      <div class=" item special card col-md-4 col-lg-3 col-sm-6 m-3"> 
         <img src="/media/b-bg.jpg" class="card-img-top" alt="...">
       </div>
-      <div class=" item special card col-md-5 col-sm-5 col-lg-3 m-3"> 
+      <div class=" item special card col-md-4 col-sm-6 col-lg-3 m-3"> 
         <img src="/media/b-bg.jpg" class="card-img-top" alt="...">
       </div>
     </div>
@@ -101,7 +101,7 @@
       <div class="flipcard my-3 me-1 col-lg-3 col-md-4 col-sm-6">
         <div class="flipcard-inner">
             <div class="card-front">
-                <img src="/media/combo/combo3.jpg" alt="..." class="img-fluid">
+                <img src="/media/combo/combo.jpg" alt="..." class="img-fluid">
             </div>
             <div class="card-back py-5 px-2">
                 <ul>
@@ -116,7 +116,7 @@
       <div class="flipcard me-1 my-3 col-lg-3 col-md-4 col-sm-6">
         <div class="flipcard-inner">
             <div class="card-front">
-                <img src="/media/combo/combo3.jpg" alt="..." class="img-fluid">
+                <img src="/media/combo/combo.jpg" alt="..." class="img-fluid">
             </div>
             <div class="card-back py-5 px-2">
                 <ul>
@@ -131,7 +131,7 @@
       <div class="flipcard me-1 my-3 col-lg-3 col-md-4 col-sm-6">
         <div class="flipcard-inner">
             <div class="card-front">
-                <img src="/media/combo/combo3.jpg" alt="..." class="img-fluid">
+                <img src="/media/combo/combo.jpg" alt="..." class="img-fluid">
             </div>
             <div class="card-back py-5 px-2">
                 <ul>
@@ -146,7 +146,7 @@
       <div class="flipcard me-1 my-3 col-lg-3 col-md-4 col-sm-6">
         <div class="flipcard-inner">
             <div class="card-front">
-                <img src="/media/combo/combo3.jpg" alt="..." class="img-fluid">
+                <img src="/media/combo/combo.jpg" alt="..." class="img-fluid">
             </div>
             <div class="card-back py-5 px-1">
                 <ul>
@@ -206,6 +206,18 @@ $(function(){
             }
         }
   });
+
+  //nav hidden
+  window.addEventListener('scroll', function() {
+          var navbar = document.getElementById('navbar');
+          var section2 = document.getElementById('item');
+
+          if (section2.getBoundingClientRect().top <= 0) {
+            navbar.classList.remove('hidden');
+          } else {
+            navbar.classList.add('hidden');
+          }
+        });
 
   //nav scroll
   $('body').scrollspy({ target: '#navbar' });
