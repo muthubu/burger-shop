@@ -55,7 +55,7 @@ h1{
 
 #combo{
     height: fit-content;
-    background-color: #fcfcfc;
+    background-color: #fcfcfc !important;
     color: black
 }
 
