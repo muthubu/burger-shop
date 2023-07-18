@@ -47,16 +47,16 @@ h1{
     color: black;
 }
 
+#service{
+    height: fit-content;
+    background-color: #f7f7f7;
+    color:black;
+}
+
 #contact{
     height: fit-content;
     background-color: #e9e5e5;
     color: black;
-}
-
-#combo{
-    height: fit-content;
-    background-color: #fcfcfc !important;
-    color: black
 }
 
 .nav-pills.nav-item.active{
@@ -134,4 +134,13 @@ footer{
 
 .form-control:hover{
     border: 3px solid rgb(241, 35, 35) !important;
+}
+
+#shover:hover{
+    background-color: rgb(241, 35, 35) !important;
+    color: #f7f7f7 !important;
+}
+
+#shover:hover h1{
+    color: #f7f7f7 !important;
 }
