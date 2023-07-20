@@ -196,26 +196,11 @@ $(document).ready(function(){
 
   var controller = new ScrollMagic.Controller();
 
-  var pinhome = new ScrollMagic.Scene({
-    triggerElement: '#home',
-    triggerHook: 0,
-    duration: '40%'
-  })
-  .setPin('#home')
-  .addTo(controller);
-
   var ourScene = new ScrollMagic.Scene({
     triggerElement: '#sm',
     triggerHook: 0.8
   })
   .setClassToggle('#sm','fade-in')
-  .addTo(controller);
-
-  var ourScene2 = new ScrollMagic.Scene({
-    triggerElement: '#o',
-    triggerHook: 0.8
-  })
-  .setClassToggle('#o','fade-in')
   .addTo(controller);
 });
    

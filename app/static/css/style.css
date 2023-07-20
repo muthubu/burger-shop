@@ -81,57 +81,6 @@ footer{
     opacity: 1;
 }
 
-.flipcard{
-    background: transparent;
-    height: 400px;
-    width: 300px;
-    margin: 1px;
-    border: 1px ,solid black;
-    border-radius: 10px;
-    perspective: 1000px;
-}
-
-.flipcard-inner{
-    position: relative;
-    height: 100%;
-    width: 100%;
-    transition: transform 1.3s;
-    transform-style: preserve-3d;
-}
-
-.flipcard:hover .flipcard-inner{
-    transform: rotateY(180deg);
-}
-
-.card-front,.card-back{
-    position: absolute;
-    backface-visibility: hidden;
-    height: 100%;
-    width: 100%;
-    border: 1px ,solid black;
-    border-radius: 10px;
-}
-
-.img-fluid{
-    border-radius: 10px;
-}
-
-.card-front{
-    background-color: rgb(20, 23, 26);
-    color: white;
-}
-
-.card-back{
-    text-align: left;
-    background-color: rgb(43, 40, 40);
-    color: white;
-    transform: rotateY(180deg);
-}
-
-.card-back ul li{
-    list-style: none;
-}
-
 .form-control:hover{
     border: 3px solid rgb(241, 35, 35) !important;
 }
@@ -143,4 +92,12 @@ footer{
 
 #shover:hover h1{
     color: #f7f7f7 !important;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
 }
