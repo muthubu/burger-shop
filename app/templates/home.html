@@ -23,9 +23,9 @@
     <p class="mb-5"><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore molestiae necessitatibus explicabo corrupti fuga! Amet voluptates totam reprehenderit. Veritatis enim neque ea reiciendis corrupti? Impedit exercitationem esse neque alias expedita.</strong></p>
   </div>
 </section>
-<section class="container-fluid p-5 text-center" id="item">
+<section class="container-fluid p-5 text-center it" id="item">
     <h1 class="mt-5 py-3 text-danger"><strong><i class="fa-solid fa-list-check"></i> items</strong></h1>
-    <div class="owl-carousel owl-theme my-5" id="sm">
+    <div class="owl-carousel owl-theme my-5 fad" id="sm">
           <div class="card h-100 ">
             <img src="/media/b-bg.jpg" class="card-img-top" alt="...">
             <div class="card-body clearfix">
@@ -69,6 +69,21 @@
             </div>
           </div>
     </div>      
+</section>
+<section class="adv">
+  <h1 class="text-center py-4"><strong>Testimonial</strong></h1>
+  <div class="owl-carousel owl-theme text-center advowl">
+    <div class="advimg">
+      <h2><strong>slide 1</strong></h2>
+      <p><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat modi ea hic, temporibus quam quaerat! Consequuntur ipsam nam eaque modi illum et culpa minus. Iste accusantium fugit obcaecati rerum numquam!</strong></p>
+    </div>
+    <div class="advimg">
+      <h2><strong>slide 2</strong></h2>
+    </div>
+    <div class="advimg">
+      <h2><strong>slide 3</strong></h2>
+    </div>
+  </div>
 </section>
 <section class="container-fluid p-5 text-center" id="service">
   <h1 class="mt-5 py-3 text-danger"><strong><i class="fa-solid fa-gears"></i> Service</strong></h1>
@@ -138,8 +153,8 @@
 <script>
 
 $(function(){
-  //carousel
-  $('.owl-carousel').owlCarousel({
+  //item carousel
+  $('.it .owl-carousel').owlCarousel({
         margin: 30,
         loop:true,
         autoplay:true,
@@ -157,6 +172,15 @@ $(function(){
             }
         }
   });
+
+  //adv carousel
+  $('.adv .owl-carousel').owlCarousel({
+        margin: 0,
+        items: 1,
+        loop:true,
+        autoplay:true,
+        smartSpeed:500
+    });
 
   //nav hidden
   window.addEventListener('scroll', function() {

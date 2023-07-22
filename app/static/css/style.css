@@ -47,6 +47,25 @@ h1{
     color: black;
 }
 
+.adv{
+    height: 420px !important;
+    width: 100%;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(235,131,130,1) 0%, rgba(235,131,130,0.75) 38.6%, rgba(211,177,125,0.52) 72.1%, rgba(211,177,125,0.24) 94.7% );
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.advowl{
+    height: 80%;
+    width: 70%;
+    position: absolute;
+}
+.advimg{
+    margin-top: 150px;
+    margin-bottom: 80px;
+    text-align:center;
+}
+
 #service{
     height: fit-content;
     background-color: #f7f7f7;
@@ -71,8 +90,7 @@ footer{
     width: 100%;
     height: fit-content;
 }
-
-.owl-carousel{
+.fad{
     opacity: 0;
     transition: all 2s ease-in;
 }
@@ -100,4 +118,14 @@ ul{
 
 a{
     text-decoration: none;
+}
+.icon{
+    border: 2px solid rgba(248, 33, 33, 0.904);
+    border-radius: 50%;
+    padding: 7px;
+}
+
+.icon:hover{
+    background-color: rgba(248, 33, 33, 0.904);
+    color: #fcfcfc;
 }
