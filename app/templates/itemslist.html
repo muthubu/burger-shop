@@ -14,7 +14,7 @@
       </li>
     </ul>
 </div>
-<div class="container-fluid my-4 tab-content">
+<div class="container-fluid my-4 tab-content clearfix">
   <div class="tab-pane active" id="Non-veg">
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 my-3">
     <div class="col">
@@ -90,6 +90,15 @@
   </div>
   </div>
 </div>
+<div class="btnback">
+  <button class="btn btn-dark mb-3"> Back</button>
+</div>
 </section>
+
+<script>
+  $(".btnback").click(() => {
+    window.history.back();
+  });
+</script>
 
 {% endblock %}
