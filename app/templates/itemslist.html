@@ -1,0 +1,95 @@
+{% extends 'master.html' %}
+{% block content %}
+<section class="item-menu container-fluid">
+<h1 class="item-title justify-content-center text-danger"><strong><i class="fa-regular fa-burger fa-beat"></i> burger</strong></h1>
+<hr class="text-danger">
+
+<div class="container-fluid my-5" style="display: flex; justify-content: center; align-items: center;">
+    <ul class="nav nav-underline" id="mytab">
+      <li class="nav-item">
+        <button class="nav-link active" style="color: black;" data-bs-toggle="tab" data-bs-target="#Non-veg"><strong><b>Non-veg</b></strong></button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" style="color: rgb(0, 129, 6) !important;" data-bs-toggle="tab" data-bs-target="#Veg"><strong><b> Veg</b></strong></button>
+      </li>
+    </ul>
+</div>
+<div class="container-fluid my-4 tab-content">
+  <div class="tab-pane active" id="Non-veg">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 my-3">
+    <div class="col">
+      <div class="card h-100 text-start" id="chover">
+        <div>
+          <img src="/media/burger.jpg" class="card-img-top">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title"><strong class="text-secondary"><b>burger</b></strong> <span class="badge bg-dark"> Non-veg</span></h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 text-start" id="chover">
+        <div>
+          <img src="/media/burger.jpg" class="card-img-top">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title"><strong class="text-secondary"><b>burger</b></strong> <span class="badge bg-dark"> Non-veg</span></h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 text-start" id="chover">
+        <div>
+          <img src="/media/burger.jpg" class="card-img-top">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title"><strong class="text-secondary"><b>burger</b></strong> <span class="badge bg-dark"> Non-veg</span></h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="tab-pane" id="Veg">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 my-3">
+    <div class="col">
+      <div class="card h-100 text-start" id="chover">
+        <div>
+          <img src="/media/burger.jpg" class="card-img-top">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title"><strong class="text-secondary"><b>burger</b></strong> <span class="badge bg-dark"> Veg</span></h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 text-start" id="chover">
+        <div>
+          <img src="/media/burger.jpg" class="card-img-top">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title"><strong class="text-secondary"><b>burger</b></strong> <span class="badge bg-dark"> Veg</span></h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 text-start" id="chover">
+        <div>
+          <img src="/media/burger.jpg" class="card-img-top">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title"><strong class="text-secondary"><b>burger</b></strong> <span class="badge bg-dark"> Veg</span></h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+</section>
+
+{% endblock %}

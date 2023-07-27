@@ -1,17 +1,21 @@
 {% extends "master.html" %}
 {% block content %}
-
+<header class="fixed-top">
+  {% include 'nav.html' %}
+</header>
 <section class="container-fluid bg-hero py-5" style="height: 720px;" id="home">
-    <div class="row center  my-5 py-5">
-        <div class="col-md-6 text-center mt-5">
-          <img src="/media/bp.png" alt="" class="img-fluid">
-        </div>
-        <div class="col-md-6 my-5">
-            <h1 style="font-size: xx-large;"><strong> Hello!,Welcome to our shop</strong></h1>
-            <h5 class="px-3 pt-3" style="font-weight: bold;">Hungry? Try Our Burgers Made with Half Pound Patties</h5>
-            <h5 class="px-3 pb-3" style="font-weight: bold;">One Hand Is Not Enough !</h5>
-        </div>
+  <div class="center" style="width: 70%;"> 
+    <div class="row my-5 center py-5">
+      <div class="col-md-6 text-center mt-5">
+        <img src="/media/bp.png" alt="" class="img-fluid">
+      </div>
+      <div class="col-md-6 my-5">
+          <h1 style="font-size: xx-large;"><strong> Hello!,Welcome to our shop</strong></h1>
+          <h5 class="px-3 pt-3" style="font-weight: bold;">Hungry? Try Our Burgers Made with Half Pound Patties</h5>
+          <h5 class="px-3 pb-3" style="font-weight: bold;">One Hand Is Not Enough !</h5>
+      </div>
     </div>
+  </div>
 </section>
 <section class="container-fluid p-5 text-center" id="about">
   <h1 class="mt-5 py-3 text-danger"><strong>About us..</strong></h1>
@@ -26,7 +30,7 @@
 <section class="container-fluid p-5 text-center it" id="item">
     <h1 class="mt-5 py-3 text-danger"><strong><i class="fa-solid fa-list-check"></i> items</strong></h1>
     <div class="owl-carousel owl-theme my-5 fad" id="sm">
-          <div class="card h-100 ">
+          <div class="card h-100" id="burger">
             <img src="/media/b-bg.jpg" class="card-img-top" alt="...">
             <div class="card-body clearfix">
               <h5 class="card-title float-start"><span class="badge bg-primary"><i class="fa-regular fa-burger fa-beat"></i> Burger</span></h5>
@@ -196,6 +200,10 @@ $(function(){
 
   //nav scroll
   $('body').scrollspy({ target: '#navbar' });
+
+  $("#burger").click(function(){
+    window.location.href = "items/";
+  });
 
   //isotope
   $('.items').isotope({
