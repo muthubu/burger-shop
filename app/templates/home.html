@@ -189,19 +189,21 @@ $(function(){
   //nav hidden
   window.addEventListener('scroll', function() {
           var navbar = document.getElementById('navbar');
-          var section2 = document.getElementById('item');
+          var section2 = document.getElementById('about');
 
           if (section2.getBoundingClientRect().top <= 0) {
-            navbar.classList.remove('hidden');
+            navbar.classList.add('shownav');
+            navbar.classList.remove('op');
           } else {
-            navbar.classList.add('hidden');
+            navbar.classList.add('op');
+            navbar.classList.remove('shownav');
           }
         });
 
   //nav scroll
   $('body').scrollspy({ target: '#navbar' });
 
-  $("#burger").click(function(){
+  $("#burger,#burger img").click(function(){
     window.location.href = "items/";
   });
 
