@@ -186,22 +186,12 @@ $(function(){
         smartSpeed:500
     });
 
-  //nav hidden
-  window.addEventListener('scroll', function() {
-          var navbar = document.getElementById('navbar');
-          var section2 = document.getElementById('about');
-
-          if (section2.getBoundingClientRect().top <= 0) {
-            navbar.classList.add('shownav');
-            navbar.classList.remove('op');
-          } else {
-            navbar.classList.add('op');
-            navbar.classList.remove('shownav');
-          }
-        });
-
   //nav scroll
   $('body').scrollspy({ target: '#navbar' });
+  
+  $('.navbar-collapse a').click(() => {
+    $('.navbar-collapse').collapse('hide');
+  });
 
   $("#burger,#burger img").click(function(){
     window.location.href = "items/";
