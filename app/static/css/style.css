@@ -7,17 +7,7 @@ body{
     position: relative;
 }
 
-.op{
-    opacity: 0.8;
-    color: #f7f7f7 !important;
-    margin-top: 10px;
-}
-
-.shownav{
-    position: fixed;
-    z-index: 999;
-    width: 100%;
-    transition: top 0.6s;
+nav{
     background-color: rgb(255, 255, 255);
     color: rgb(241, 35, 35) !important;
     box-shadow: 0px 2px 7px rgba(231, 102, 102, 0.445);
